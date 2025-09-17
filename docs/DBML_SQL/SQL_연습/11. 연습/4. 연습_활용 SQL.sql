@@ -1,0 +1,8 @@
+ALTER TABLE `sql_std`.`CHILD` 
+DROP FOREIGN KEY `CHILD_MOTHER_fk`;
+ALTER TABLE `sql_std`.`CHILD` 
+CHANGE COLUMN `dep_cod` `dep_cod` VARCHAR(10) NULL DEFAULT NULL ;
+ALTER TABLE `sql_std`.`CHILD` 
+ADD CONSTRAINT `CHILD_MOTHER_fk`
+  FOREIGN KEY (`dep_cod`)
+  REFERENCES `sql_std`.`MOTHER` (`dep_cod`)
