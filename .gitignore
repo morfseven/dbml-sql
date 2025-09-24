@@ -171,6 +171,9 @@ Thumbs.db
 ehthumbs.db
 Desktop.ini
 
-# MariaDB/MySQL log files
+# MariaDB/MySQL log files and data files
 **/ib_logfile*
 **/aria_log.*
+**/aria_log_control
+**/ibdata*
+**/ibtmp*
