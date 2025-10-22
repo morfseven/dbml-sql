@@ -177,3 +177,6 @@ Desktop.ini
 **/aria_log_control
 **/ibdata*
 **/ibtmp*
+
+# MariaDB data directory (used for volume mounting)
+mariadb_tmplt/data/
